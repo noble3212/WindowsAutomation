@@ -12,3 +12,5 @@ Please note this can't seem to find CVES yet. This just acts as a proof of conce
 and badmalwarescanner is suppost to detect if there is any suspious activity. But, it will mainly sus yourself out. As it detects if there is a CMD window open among other things
 # System mointor 
 It has issues accurately descripting tasks- It assumes when an application uses more than 1 core. It's at 500%. Task manager is better
+# Bot net scanner
+This will scan for applications with few too many DNS queries- This is normal but if something other than microsoft comes up itll tell you
