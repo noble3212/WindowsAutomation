@@ -1,6 +1,8 @@
 # WindowsAutomation
 These are some scripts to automate windows file check, event viewer mointoring. And back up a certain file location to another among anything else
 Note with windows backup- it directs a certain folder to another location on a drive. Please note this will not backup windows- unless i make fullwindowsbackup script- which i will
+# Windows auto check
+It will check windows and scan for corruption. I do not include check disk commands- or disk cleanup because you need to use wiztree to atucally clean up nvme. You only run disk optimization on HDDS
 # Please note windows full backup is untested
 it is different from windowsautobackup or windows file back up- Windows file backup will backup mainfiles like apps and downloads- You will not be able to restore windows from this
 # Event Viewer watching ps1
