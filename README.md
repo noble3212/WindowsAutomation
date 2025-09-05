@@ -5,3 +5,6 @@ Note with windows backup- it directs a certain folder to another location on a d
 it is different from windowsautobackup
 # Event Viewer watching ps1
 Supposed to log directly to C drive- System autologs works a bit better for this-
+# CVE scanner
+Please note this can't seem to find CVES yet. This just acts as a proof of concept.
+and badmalwarescanner is suppost to detect if there is any suspious activity. But, it will mainly sus yourself out. As it detects if there is a CMD window open among other things
