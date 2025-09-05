@@ -6,6 +6,7 @@ sfc /scannow
 
 # Run DISM tool to fix Windows image
 Write-Host "Running DISM tool..."
+DISM /Online /Cleanup-Image /ScanHealth
 DISM /Online /Cleanup-Image /RestoreHealth
 
 # Check disk (optional, if you'd like to add this to your script)
@@ -27,3 +28,4 @@ Get-WinEvent -LogName System | Where-Object { $_.LevelDisplayName -eq "Error" } 
 # Check system for disk usage (example check for possible storage issues)
 Write-Host "Checking disk usage..."
 Get-PSDrive -PSProvider FileSystem
+
