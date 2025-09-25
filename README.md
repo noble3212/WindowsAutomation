@@ -19,7 +19,7 @@ This will automate the moving of windows profile to another user incase of profi
 how to use 
 Make the script executable
 .\MigrateProfile.ps1 -SourceUser alice -TargetUser bob -ExportRegistry
-#windows user migration with robocopy 
+# windows user migration with robocopy 
 Parallel Copy
 Start-Job is used to fire off a robocopy job for every folder that needs to be mirrored. The jobs run concurrently on all available CPU cores.
 UI Front‑End
@@ -31,13 +31,20 @@ After all jobs finish, the script parses the individual robocopy logs, pulls the
 # How It Works
  
 UI – Show-MigrationForm builds the form and returns a hash with Source, Target and ExportReg.
+
 Logging – Log-Info writes to both the console and the central log file.
+
 Parallel Copy – Copy-Parallel builds a robocopy command with /LOG+:<LogFile> and starts it inside a background job.
+
 Snapshot – A dedicated robocopy job mirrors the target profile to ProfileBackup‑<stamp>.
+
 Jobs – All core folders, AppData subfolders, and UWP packages are queued as separate jobs.
+
 Wait & Audit – Wait-Job blocks until all jobs finish, then the script counts Copied/Skipped/Errors from each log line, writes an audit CSV, and notifies you.
+
 3. Running the Script
 Open PowerShell as Administrator (Start‑Menu → PowerShell → Run as Administrator).
 Navigate to the folder where you saved the script, e.g.:
+
 cd C:\Scripts
 .\ProfileMigration.ps1
