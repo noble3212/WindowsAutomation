@@ -16,3 +16,6 @@ It has issues accurately descripting tasks- It assumes when an application uses 
 This will scan for applications with few too many DNS queries- This is normal but if something other than microsoft comes up itll tell you
 # Windows user migration
 This will automate the moving of windows profile to another user incase of profile corruption
+how to use 
+Make the script executable
+.\MigrateProfile.ps1 -SourceUser alice -TargetUser bob -ExportRegistry
