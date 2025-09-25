@@ -46,5 +46,6 @@ Wait & Audit – Wait-Job blocks until all jobs finish, then the script counts C
 Open PowerShell as Administrator (Start‑Menu → PowerShell → Run as Administrator).
 Navigate to the folder where you saved the script, e.g.:
 
-cd C:\Scripts
-.\ProfileMigration.ps1
+cd C:\Downloads
+
+.\windowsusermigrationwithrobocopy.ps1
